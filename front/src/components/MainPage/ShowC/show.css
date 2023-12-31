@@ -1,0 +1,50 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: space-between; /* Répartit les cartes sur la ligne */
+  }
+  
+  .card {
+    width: calc(33.33% - 20px); /* Pour 3 produits par ligne */
+    /* (Largeur totale de la ligne / nombre de produits) - espacement */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Ajoute une bordure pour séparer visuellement les cartes */
+    box-sizing: border-box; /* Inclut la bordure dans la largeur/hauteur définie */
+  }
+  
+  .card__body {
+    padding: 20px;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card__title {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .card__description {
+    margin-top: 10px;
+  }
+  
+  .card__btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card__btn:hover {
+    background-color: #0056b3;
+  }
+  
